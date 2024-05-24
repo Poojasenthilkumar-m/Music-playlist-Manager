@@ -1,0 +1,13 @@
+<playlists>
+<playlist name="My Playlist 1">
+<song>
+<title>Song Title 1</title>
+<artist>Artist 1</artist>
+<path>path/to/song1.mp3</path>
+</song>
+<song>
+<title>Song Title 2</title>
+<artist>Artist 2</artist>
+<path>path/to/song2.mp3</path>
+</song>
+</playlist> </playlists>

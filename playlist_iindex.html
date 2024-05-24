@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Playlist Manager</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+background-color: #f5f5f5;
+}
+h1, h2 {
+margin-bottom: 10px;
+color: #333;
+}
+ul {
+list-style: none;
+padding: 0;
+}
+ul li {
+margin-bottom: 5px;
+padding: 10px 15px;
+border-radius: 5px;
+background-color: #eee;
+cursor: pointer; /* Add cursor change on hover */
+}
+ul li:hover {
+background-color: #ddd;
+}
+form {
+margin-bottom: 15px;
+padding: 15px;
+border-radius: 5px;
+background-color: #fff;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+input[type="text"], input[type="file"], select {
+padding: 5px;
+margin-bottom: 5px;
+border: 1px solid #ccc;
+width: 200px;
+}
+button[type="submit"] {
+padding: 5px 10px;
+border: none;
+border-radius: 3px;
+background-color: #4CAF50;
+color: white;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h1>Music Playlist Manager</h1>
+<h2>Playlists</h2>
+<ul></ul>
+<h2>Create Playlist</h2>
+<form method="post">
+Playlist Name: <input type="text" name="playlist" required><br>
+<button type="submit">Create</button>
+</form>
+<h2>Add Song to Playlist</h2>
+<form method="post" enctype="multipart/form-data">
+Select Playlist: <select name="playlist"></select><br>
+Song Title: <input type="text" name="title" required><br>
+Artist: <input type="text" name="artist" required><br>
+File Path: <input type="file" name="path" required><br>
+<button type="submit">Add Song</button>
+</form>
+</body>
+</html>
